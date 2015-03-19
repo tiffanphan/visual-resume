@@ -1,0 +1,266 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Survey-ThaoPhan</title>
+<style type="text/css">
+	@import 'css/style.css' screen;
+</style>
+<script type="text/javascript" src="js/process_form.js"></script>
+</head>
+<body>
+	<form  action="" method="POST" name="myform">
+		<div id="sidebar">
+			<ul>
+			<li><a href="survey.html">HOME</a></li>
+			<li><a href="#">PROFILE</a></li>
+			<li><a href="#">SURVEY</a></li>
+			</ul>
+		</div>
+		<div id="header">
+			<p>ARE YOU RED, YELLOW OR GREEN LIGHT?</p>
+		</div>
+		<div id="content">
+		
+		<fieldset>
+			<legend>Personal Info</legend>
+			<div id="name" value="" style="display:none">First Name</div>
+			<div id="phone" value="" style="display:none">Phone</div>
+			<div id="email" value="" style="display:none">Email</div>
+			<div id="url" value="" style="display:none">Url</div>
+			
+			<div id="info">
+			<div id="q1">
+			<label for="fname_id"> First Name </label>
+			<input id="fname_id" type="text" value="" name="fname_name" ></input>
+			<img id="image4" src="img/check-icon.png" alt="" style="display:none;"/>
+			<img src="img/x-icon.png" alt="" id="image5" style="display:none;"/>
+			<span name="span"/>
+			</div>
+			
+			<div id="q2">
+			<label for="lname_id"> Last Name </label>
+			<input id="lname_id" type="text" value="" name="lname_name"></input>
+			<img id="image6" src="img/check-icon.png" alt="" style="display:none;"/>
+			<img src="img/x-icon.png" alt="" id="image7" style="display:none;"/>
+			<span name="span"/>
+			</div>
+			
+			<div id="q3">
+			<label for="phone_id"> Phone </label>
+			<input id="phone_id" type="text" value="" name="phone_num"></input>
+			<img id="image8" src="img/check-icon.png" alt="" style="display:none;"/>
+			<img src="img/x-icon.png" alt="" id="image9" style="display:none;"/>
+			<span name="span"/>
+			</div>
+			
+			<div id="q4">
+			<label for="email_id"> Email </label>
+			<input id="email_id" type="text" value="" name="email_mail"></input>
+			<img id="image10" src="img/check-icon.png" alt="" style="display:none;"/>
+			<img src="img/x-icon.png" alt="" id="image11" style="display:none;"/>
+			<span name="span"/>
+			</div>
+			
+			<div id="q5">
+			<label for="sulleyadd_id"> Sulley Address </label>
+			<input id="sulleyadd_id" type="text" value="" name="sulley_mail"></input>
+			<img id="image12" src="img/check-icon.png" alt="" style="display:none;"/>
+			<img src="img/x-icon.png" alt="" id="image13" style="display:none;"/>
+			<span name="span"/>
+			</br>
+			<input type="submit"  class="button" value="Save" name="Submit" id="submit" ></input>
+			</div>
+			<div class="errors" id="error_display"/>
+			</div>
+			
+		</fieldset>
+
+<fieldset>
+		<legend>SURVEY</legend>
+		<div id= "survey">
+			<div id="q_1">
+			<h4>1.When you are with your friend/colleague.Are you thinking?</h4>
+				<div>
+				<label for="answera_id">a.You are better than them</label>
+				<input id="answera_id" type="radio" name="answer" value="2" onclick="processForm(this.value)"></input>
+				</div>
+				
+				<div>
+				<label for="answerb_id">b.You are the most successful</label>
+				<input id="answerb_id" type="radio" name="answer" value="1" onclick="processForm(this.value)"></input>
+				</div>
+				
+				<div>
+				<label for="answerc_id">c.You are normal.</label>
+				<input id="answerc_id" type="radio" name="answer" value="3" onclick="processForm(this.value)"></input>
+				</div>
+				<span name="span" />
+			</div>
+			<div id="q_2">
+			<h4>2.When you need to make decision, you will:</h4>
+				<div>
+				<label for="answera_id">a.Go to sleep and then decide later</label>
+				<input id="answera_id" type="radio" name="answer2" value="1" onclick="processForm(this.value)"></input>
+				</div>
+				
+				<div>
+				<label for="answerb_id">b.Decide after few minutes</label>
+				<input id="answera_id" type="radio" name="answer2" value="2" onclick="processForm(this.value)"></input>
+				</div>
+				
+				<div>
+				<label for="answerc_id">c.Decide right away</label>
+				<input id="answerc_id" type="radio" name="answer2" value="3" onclick="processForm(this.value)"></input>
+				</div>
+				<span name="span" />
+			</div>
+			
+			<div id="q_3">
+			<h4>3.You always chose a place for you vacation:</h4>
+				<div>
+				<label for="answera_id">a.Beach</label>
+				<input id="answera_id" type="radio" name="answer3" value="2" onclick="processForm(this.value)"></input>
+				</div>
+				
+				<div>
+				<label for="answerb_id">b.Mountain</label>
+				<input id="answerb_id" type="radio" name="answer3" value="1" onclick="processForm(this.value)"></input>
+				</div>
+				
+				<div>
+				<label for="answerc_id">c.Oversea</label>
+				<input id="answerc_id" type="radio" name="answer3" value="3" onclick="processForm(this.value)"></input>
+				</div>
+				<span name="span" />
+			</div>
+			
+			<div id="q_4">
+			<h4>4.You are:</h4>
+				<div>
+				<label for="answera_id">a.Always on time</label>
+				<input id="answera_id" type="radio" name="answer4" value="2" onclick="processForm(this.value)"></input>
+				</div>
+				
+				<div>
+				<label for="answerb_id">b.Always come early</label>
+				<input id="answerb_id" type="radio" name="answer4" value="3" onclick="processForm(this.value)"></input>
+				</div>
+				
+				<div>
+				<label for="answerc_id">c.Always late 1-2 hours</label>
+				<input id="answerc_id" type="radio" name="answer4" value="1"onclick="processForm(this.value)"></input>
+				</div>
+				<span name="span" />
+			</div>
+			
+			<div id="q_5">
+			<h4>5.When you eat lunch, you:</h4>
+				<div>
+				<label for="answera_id">a.Take a sit and enjoy your lunch</label>
+				<input id="answera_id" type="radio" name="answer5" value="3" onclick="processForm(this.value)"></input>
+				</div>
+				
+				<div>
+				<label for="answerb_id">b.Eat for few hours</label>
+				<input id="answerb_id" type="radio" name="answer5" value="2" onclick="processForm(this.value)"></input>
+				</div>
+				
+				<div>
+				<label for="answerc_id">c.Eat really fast and leave</label>
+				<input id="answerc_id" type="radio" name="answer5" value="1" onclick="processForm(this.value)"></input>
+				</div>
+				<span name="span" />
+			</div>
+			
+			<div id="q_6">
+			<h4>6.When you dine out, you always:</h4>
+				<div>
+				<label for="answera_id">a.Know what to order</label>
+				<input id="answera_id" type="radio" name="answer6" value="3" onclick="processForm(this.value)"></input>
+				</div>
+				
+				<div>
+				<label for="answerb_id">b.Need few minutes to decide what to eat</label>
+				<input id="answerb_id" type="radio" name="answer6" value="2" onclick="processForm(this.value)"></input>
+				</div>
+				
+				<div>
+				<label for="answerc_id">c.Read over the menu few times</label>
+				<input id="answerc_id" type="radio" name="answer6" value="1" onclick="processForm(this.value)"></input>
+				</div>
+				<span name="span" />
+			</div>
+			
+			<div id="q_7">
+			<h4>7.When you go shopping, you:</h4>
+				<div>
+				<label for="answera_id">a.Window shopping most of the time</label>
+				<input id="answera_id" type="radio" name="answer7" value="1" onclick="processForm(this.value)"></input>
+				</div>
+				
+				<div>
+				<label for="answerb_id">b.Spend 1 hour to shop</label>
+				<input id="answerb_id" type="radio" name="answer7" value="2" onclick="processForm(this.value)"></input>
+				</div>
+				
+				<div>
+				<label for="answerc_id">c.Walk back and ford in front of one store.</label>
+				<input id="answerc_id" type="radio" name="answer7" value="3" onclick="processForm(this.value)"></input>
+				</div>
+				<span name="span" />
+			</div>
+			
+			<div id="q_8">
+			<h4>8.When you're in love, you are:</h4>
+				<div>
+				<label for="answera_id">a.Know exactly your feeling</label>
+				<input id="answera_id" type="radio" name="answer8" value="3" onclick="processForm(this.value)"></input>
+				</div>
+				
+				<div>
+				<label for="answerb_id">b.You have to know your partner for few weeks</label>
+				<input id="answerb_id" type="radio" name="answer8" value="2" onclick="processForm(this.value)"></input>
+				</div>
+				
+				<div>
+				<label for="answerc_id">c.You have to know your partner for few months</label>
+				<input id="answerc_id" type="radio" name="answer8" value="1" onclick="processForm(this.value)"></input>
+				</div>
+				<span name="span" />
+			</div>
+			
+				<input type="text" name="totalSum" id="totalSum" style="display: none"></input>
+				<input type="submit"  class="button" value="Submit" name="Submit" id="submit" ></input>
+			</div>
+			<div id="result">
+				<div id="name" value="" style="display:none">First Name</div>
+				<div id="image1" style="display:none;">
+				<img src="img/redlight.png" alt=""></img>
+				</div>
+				
+				<div id="image2" style="display:none;">
+				<img src="img/yellowlight.png" alt=""></img>
+				</div>
+				
+				<div id="image3" style="display:none;">
+				<img src="img/greenlight.jpg" alt=""></img>
+				</div>
+				
+				<span id="result">Display Your Result on Your Blog or Profile</span>
+				<textarea id="badge1" style="display:none;">
+				</textarea>
+				
+				<textarea id="badge2" style="display:none;">
+				</textarea>
+				
+				<textarea id="badge3" style="display:none;">
+				</textarea>
+		</div>
+		</fieldset>
+		<div id="footer">
+			<p> @ Created by ThaoPhan<p>
+		</div>
+		</div>
+</form>
+</body>
+</html>
