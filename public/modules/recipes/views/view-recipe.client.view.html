@@ -1,3 +1,4 @@
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
 <section data-ng-controller="RecipesController" data-ng-init="findOne()">
 	<div class="page-header">
 		<h1 data-ng-bind="recipe.title"></h1>
@@ -19,4 +20,17 @@
 		</em>
 	</small>
 	<p class="lead" data-ng-bind="recipe.content"></p>
+	<div id='dv1'>
+            
+                Post your Comment
+                
+                    <textarea ng-model="txtcomment" placeholder="Your Comment" style='width:500px'></textarea>
+                    <button ng-click='btn_add();' style='margin-top:10px;'>Post Comment</button>
+ 
+                    <h4>Comments</h4>
+                    <ul>
+                        <li ng-repeat="comnt in comment"> {{ comnt }} <a  style="float: right;" href="" ng-click="remItem($index)">x</a></li>
+                    </ul>
+                 
+        </div>
 </section>

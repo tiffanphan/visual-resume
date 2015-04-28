@@ -1,8 +1,8 @@
 'use strict';
 
 // Recipes controller
-angular.module('recipes').controller('RecipesController', ['$scope', '$stateParams', '$location', 'Authentication', 'Recipes',
-	function($scope, $stateParams, $location, Authentication, Recipes) {
+angular.module('recipes').controller('RecipesController', ['$scope', '$stateParams', '$location', 'Authentication', 'Socket','Recipes',
+	function($scope, $stateParams, $location, Authentication, Socket, Recipes) {
 		$scope.authentication = Authentication;
 
 		// Create new Recipe
@@ -64,5 +64,16 @@ angular.module('recipes').controller('RecipesController', ['$scope', '$statePara
 				recipeId: $stateParams.recipeId
 			});
 		};
+                $scope.comment = [];
+                $scope.btn_add = function() {
+                    if($scope.txtcomment !=''){
+                    $scope.comment.push($scope.txtcomment);
+                    $scope.txtcomment = "";
+                    }
+                }
+ 
+                $scope.remItem = function($index) {
+                    $scope.comment.splice($index, 1);
+                }
 	}
 ]);
