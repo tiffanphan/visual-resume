@@ -1,7 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Cookchat</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="css/heroic-features.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
 <section data-ng-controller="PhotosController" data-ng-init="find()">
-    <div class="page-header">
-        <h1>Photos</h1>
-    </div>
+    
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Jumbotron Header -->
+        <header class="jumbotron hero-spacer">
+            <h1>Photos</h1>
+            <p>Here at CookChat, we love to share our delicious creations with one another! <br> Post pictures of what you cooked and get inspired by others.</p>
+        </header>
+
+        <hr>
+
+        <!-- Title -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h3>Latest Features</h3><br>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Page Features -->
+        <div class="row text-center">
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="modules/photos/img/pasta.jpg" alt="">
+                    <div class="caption">
+                        <h3>Pasta</h3>
+                        <p>See what recent users have posted of everyone's Italian favorite! </p>
+                        <p>
+                            <a href="#" class="btn btn-default">View Photos</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="modules/photos/img/seafood.jpg" alt="">
+                    <div class="caption">
+                        <h3>Seafood</h3>
+                        <p>From shrimps to mussels, seafood meals are loved by everyone!</p>
+                        <p>
+                            <a href="#" class="btn btn-default">View Photos</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="modules/photos/img/soup.jpg" alt="">
+                    <div class="caption">
+                        <h3>Soup</h3>
+                        <p>Many users post photos of their soups for a light and quick meal!</p>
+                        <p>
+                            <a href="#" class="btn btn-default">View Photos</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="modules/photos/img/dessert.jpg" alt="">
+                    <div class="caption">
+                        <h3>Dessert</h3>
+                        <p>View these photos to satisfy that sweet tooth!</p>
+                        <p>
+                            <a href="#" class="btn btn-default">View Photos</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div><br><hr>
+        <!-- /.row -->
+        
+     <!-- Title -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h3>Photos By You:</h3><br>
+            </div>
+        </div>
+    
     <div class="list-group">
         <a data-ng-repeat="photo in photos" data-ng-href="#!/photos/{{photo._id}}" class="list-group-item">
 			<small class="list-group-item-text">
@@ -15,6 +129,29 @@
         </a>
     </div>
     <div class="alert alert-warning text-center" data-ng-hide="!photos.$resolved || photos.length">
-    	No Photos yet, why don't you <a href="/#!/photos/create">create one</a>?
+    	You didn't upload any. <a href="/#!/photos/create">Post one</a>!
     </div>
 </section>
+    
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; CookChat 2015</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+    
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+      
+</body>
+</html>

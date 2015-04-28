@@ -2,7 +2,7 @@
 
 (function() {
 	// Recipes Controller Spec
-	describe('RecipesController', function() {
+	describe('Recipes Controller Tests', function() {
 		// Initialize global variables
 		var RecipesController,
 			scope,

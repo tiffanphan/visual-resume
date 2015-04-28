@@ -46,12 +46,11 @@
 <body class="ng-cloak">
 	<header data-ng-include="'/modules/core/views/header.client.view.html'" class="navbar navbar-fixed-top navbar-inverse"></header>
 	<section class="content">
+	<div ng-show="myValue" class="ng-hide"> New Article Posted! </div>
 		<section class="container">
 			{% block content %}{% endblock %}
 		</section>
 	</section>
-	
-
 
 	<!--Embedding The User Object-->
 	<script type="text/javascript">
@@ -65,6 +64,3 @@
 	<!--Livereload script rendered -->
 	<script type="text/javascript" src="http://{{request.hostname}}:35729/livereload.js"></script>
 	{% endif %}
-</body>
-
-</html>

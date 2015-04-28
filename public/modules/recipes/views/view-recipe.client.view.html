@@ -1,11 +1,8 @@
-<html>
-
-<body>
 <section data-ng-controller="RecipesController" data-ng-init="findOne()">
 	<div class="page-header">
 		<h1 data-ng-bind="recipe.title"></h1>
 	</div>
-	<div class="pull-right" data-ng-show="authentication.user._id == recipe.user._id">xo
+	<div class="pull-right" data-ng-show="authentication.user._id == recipe.user._id">
 		<a class="btn btn-primary" href="/#!/recipes/{{recipe._id}}/edit">
 			<i class="glyphicon glyphicon-edit"></i>
 		</a>
@@ -22,8 +19,4 @@
 		</em>
 	</small>
 	<p class="lead" data-ng-bind="recipe.content"></p>
-	
 </section>
-
-</body>
-</html>
